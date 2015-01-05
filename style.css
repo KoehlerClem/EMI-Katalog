@@ -1,4 +1,5 @@
 body {
+    font-size: 17px;
     background-color: #F5ECCE;
     margin: auto;
     width: 1000px;
@@ -19,35 +20,29 @@ a:hover, a:active {
 
 
 header {
+    font-weight: bold;
     text-align: center;
 }
 
 header img {
-    margin: 0;
-    padding: 0;
 }
 
-header nav {
-    height: 40px;
-    font-weight: bold;
+header nav {line-height: 39px;
     background-color: #666;
     border-radius: 5px;
-    border-width: 0;
 }
 
 header nav ul {
-    padding: 10px 0;
+
 }
 
 header nav ul li {
-    padding: 0 10px;
+    padding: 0 20px;
     display: inline;
     color: #FFF;
     
 }
 header nav ul input {
-    padding: 0;
-    margin: 0;
 }
 
 header nav ul a:link, #header nav a:visited {
@@ -75,7 +70,7 @@ footer {
     text-align: center;
     font-weight: bold;
     width: 100%;
-    height: 40px;
+    height: 39px;
     border-radius: 5px;
     background-color: #666;
 }
@@ -94,7 +89,23 @@ footer a:link{
 <!-- Ab hier CSS vom Kalender -->
 
 
-table {
+table, th, td {;
+    border-collapse: collapse;
+}
+#date_memory{
+    display: none;
+}
+
+table{
+    text-align: center;
+    color: white;
+    margin: auto;
+    width: 800px;
+    height: 800px;
+}
+
+td{
+    background-color: #666;
 }
 
 
@@ -103,47 +114,28 @@ table {
 	font-size: 12px;
 	text-align: center;
 	text-decoration: none;
+    padding: 20px 20px;
 }
 
 .calendar_head {
-    background-color: #666;
 	font-family: Arial;
 	font-size: 15px;
 	font-weight: bold;
-	text-align: center;
-	width: 25px;
+	
 }
 
 .calendar_head_month {
-	font-family: Arial;
-	font-size: 15px;
-	font-weight: bold;
-	text-align: center;
-	width: 25px;
-	background-color: #666;
-	color: #FFFFFF;
 }
 
 .calendar_day {
-	font-family: Arial;
-	font-size: 14px;
-	font-weight: bold;
-	text-align: center;
-	width: 20px;
-	color: #FFFFFF;
-	background-color: #666;
 }
 
 .calendar_entry {
-    background-color: #666;
-    margin: 0 0;
-    padding: 0 0;
-	font-family: Arial;
-	font-size: 12px;
-	text-align: center;
 }
 
 #myform{
+    margin: auto;
+    
     
 }
 
