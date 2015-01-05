@@ -1,0 +1,151 @@
+body {
+    background-color: #F5ECCE;
+    margin: auto;
+    width: 1000px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+a:link, a:visited {
+    color: #fff;
+}
+
+a:hover, a:active {
+    background-color: #CF5C3F;
+}
+
+
+header {
+    text-align: center;
+}
+
+header img {
+    margin: 0;
+    padding: 0;
+}
+
+header nav {
+    height: 40px;
+    font-weight: bold;
+    background-color: #666;
+    border-radius: 5px;
+    border-width: 0;
+}
+
+header nav ul {
+    padding: 10px 0;
+}
+
+header nav ul li {
+    padding: 0 10px;
+    display: inline;
+    color: #FFF;
+    
+}
+header nav ul input {
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul a:link, #header nav a:visited {
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+#categorys ul {
+    list-style: none;
+}
+
+#categorys ul li {
+    text-align: center;
+    padding: 10px 0;
+    display: inline-block;
+    width: 100px;
+    background-color: #666;
+}
+
+#calendar img {
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #666;
+}
+
+footer p {
+    color: #FFF;
+    padding: 10px 10px;
+    margin: 0;
+}
+
+footer a:link{
+    border-radius: 5px;
+    padding: 10px 10px;
+}
+
+<!-- Ab hier CSS vom Kalender -->
+
+
+table {
+}
+
+
+.calendar_link {
+	font-family: Arial;
+	font-size: 12px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.calendar_head {
+    background-color: #666;
+	font-family: Arial;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+	width: 25px;
+}
+
+.calendar_head_month {
+	font-family: Arial;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+	width: 25px;
+	background-color: #666;
+	color: #FFFFFF;
+}
+
+.calendar_day {
+	font-family: Arial;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	width: 20px;
+	color: #FFFFFF;
+	background-color: #666;
+}
+
+.calendar_entry {
+    background-color: #666;
+    margin: 0 0;
+    padding: 0 0;
+	font-family: Arial;
+	font-size: 12px;
+	text-align: center;
+}
+
+#myform{
+    
+}
+
+
+
