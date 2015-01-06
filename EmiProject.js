@@ -1,6 +1,6 @@
-function zeig(){
-    var such =window.projekt.suchmaschine.eingabe.value.toLowerCase(); //suchmaschine ist html feld, eingabe ist gesuchter text, ändert zu LowerCase
-    if(such.match(/\d.\d/){     // filtert Datum eingaben in zahlen form.
+function zeig() {
+    var such = window.projekt.suchmaschine.eingabe.value.toLowerCase(); //suchmaschine ist html feld, eingabe ist gesuchter text, ändert zu LowerCase
+    if (such.match(/\d.\d/){     // filtert Datum eingaben in zahlen form.
         var datum=such.split(".");
         datum[1]=parseInt(datum[1]);
         switch(datum[1]){   //weist den passenden Monat zu

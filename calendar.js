@@ -177,7 +177,7 @@ function loadcalendar()
 			entry.innerHTML = '<a class=calendar_link href=javascript:putDate('+zahl+')>'+zahl+'</a>';
 			entry.hidden = false;
 			entry.style.visibility='visible';
-			entry.style.border = 'solid 1px';
+			entry.style.border = 'solid 0px';
 			//wenn Event ist
 			if (!getEventtext(y,m,zahl))
 				{entry.style.color='000000';}

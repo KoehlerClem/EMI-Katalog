@@ -1,9 +1,10 @@
 body {
-    font-size: 17px;
     background-color: #F5ECCE;
     margin: auto;
     width: 1000px;
 }
+
+ /* Styling von Links */
 
 a {
     text-decoration: none;
@@ -20,35 +21,47 @@ a:hover, a:active {
 
 
 header {
+    color: white;
     font-weight: bold;
     text-align: center;
 }
 
+
 header img {
 }
 
-header nav {line-height: 39px;
+/* Styling von der Navigation (Home etc) */
+
+nav {
+    height: 40px;
     background-color: #666;
     border-radius: 5px;
 }
 
 header nav ul {
-
+    list-style: none;
+    margin: 0;
+    
 }
 
 header nav ul li {
-    padding: 0 20px;
     display: inline;
-    color: #FFF;
     
 }
+
+header nav ul a:link, header nav a:visited {
+    display: inline-block;
+    height: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Styling vom Suchfeld */
+
 header nav ul input {
 }
 
-header nav ul a:link, #header nav a:visited {
-    padding: 10px 10px;
-    border-radius: 5px;
-}
+/* Styling von den Kategorien */
 
 #categorys ul {
     list-style: none;
@@ -62,9 +75,7 @@ header nav ul a:link, #header nav a:visited {
     background-color: #666;
 }
 
-#calendar img {
-    width: 100%;
-}
+/* Styling vom Footer */
 
 footer {
     text-align: center;
@@ -86,17 +97,22 @@ footer a:link{
     padding: 10px 10px;
 }
 
-<!-- Ab hier CSS vom Kalender -->
+/* Styling vom Kalender */
 
 
 table, th, td {;
     border-collapse: collapse;
 }
-#date_memory{
+
+#date-memory-row{
     display: none;
 }
 
 table{
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: gray;
     text-align: center;
     color: white;
     margin: auto;
@@ -110,18 +126,14 @@ td{
 
 
 .calendar_link {
-	font-family: Arial;
-	font-size: 12px;
+    line-height: 0px;
 	text-align: center;
 	text-decoration: none;
     padding: 20px 20px;
 }
 
 .calendar_head {
-	font-family: Arial;
-	font-size: 15px;
-	font-weight: bold;
-	
+
 }
 
 .calendar_head_month {
