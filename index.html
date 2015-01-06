@@ -13,7 +13,7 @@
     <body>
         
         
-        <header class="mainheader">
+        <header>
             <img src="img/logo.jpg">
             <nav>
                 <ul>
@@ -29,12 +29,12 @@
         
         <div id="categorys">
             <ul>
-                <li><button>Sport</button></li>
-                <li><button>Musik</button></li>
-                <li><button>Party</button></li>
-                <li><button>Kultur</button></li>
-                <li><button>Wissenschaft</button></li>
-                <li><button>Feiertage</button></li>
+                <li><input type="checkbox" id="cSport">Sport</li>
+                <li><input type="checkbox" id="cSport">Musik</li>
+                <li><input type="checkbox" id="cSport">Party</li>
+                <li><input type="checkbox" id="cSport">Kultur</li>
+                <li><input type="checkbox" id="cSport">Outdoor</li>
+                <li><input type="checkbox" id="cSport">Feiertage</li>
                 
             </ul>
         </div>
@@ -46,10 +46,12 @@
                 <td colspan=7 id='date_memory'>---</td>
             </tr>
             <tr>
-                <td class='calendar_head'><a class='calendar_link'
-                    href='javascript:prevMonth()'> &laquo;</a></td>
+                <td class='calendar_head'>
+                    <a class='calendar_link' href='javascript:prevMonth()'> &laquo;</a>
+                </td>
                 <td colspan=5 class='calendar_head_month' id='calendar_month'>
-                    ---</td>
+                    ---
+                </td>
                 <td class='calendar_head'><a class='calendar_link'
                     href='javascript:nextMonth()'> &raquo;</a></td>
             </tr>
@@ -132,7 +134,7 @@
 
         
         <form id='myform'>
-            <input id='datum' size=50/>
+            <input id='datum' size=60/>
         </form>
 
         

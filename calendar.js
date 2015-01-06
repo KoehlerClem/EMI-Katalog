@@ -1,17 +1,17 @@
 /**
-* Ist ein Datum gültig
+* Ist ein Datum gÃ¼ltig
 * @param y: Jahr
 * @param m: Monat
 * @param d: Tag
-* @return true = gültig, false = ungültig
+* @return true = gÃ¼ltig, false = ungÃ¼ltig
 */
-function isValidDate(y,m,d)
-{
+function isValidDate(y, m, d)
+    {
 	//--Gibt Datum des letzten Tag des Monats aus--
 	var thisDate = new Date(y,m,1);
 	//einen Tag weiter schalten
 	thisDate.setMonth(thisDate.getMonth()+1);
-	//vom ersten Tag des nächsten monats
+	//vom ersten Tag des nÃ¤chsten monats
 	//ein Tag abziehen
 	thisDate.setTime(thisDate.getTime() - 12*3600*1000);
 	
@@ -19,10 +19,10 @@ function isValidDate(y,m,d)
 		{return false;}
 	else
 		{return true;}
-}
+    }
 /**
 * ermittelt den letzten Tag des aktuellen Monats
-* @return: gibt letzten Tag zurück
+* @return: gibt letzten Tag zurÃ¼ck
 */
 function getLastDayOfMonth()
 {
@@ -31,13 +31,13 @@ function getLastDayOfMonth()
 	d.setMonth(d.getMonth()+1);
 	//den ersten des Monats setzen
 	d.setDate(1);
-	//vom ersten Tag des nächsten monats
+	//vom ersten Tag des nÃ¤chsten monats
 	//ein Tag abziehen
 	d.setTime(d.getTime() - 12*3600*1000);
 	return d.getDate();
 }
 /**
-* Übernimmt das angeklickte Datum in das Ausgabeelement
+* Ãœbernimmt das angeklickte Datum in das Ausgabeelement
 * @param n: Kalendertag zum Kombinieren mit Monat und Jahr
 */
 function putDate(n)
@@ -47,7 +47,7 @@ function putDate(n)
 	
 	
 	var returnValue;
-	if (returnModus==0) //Datum zurückgeben
+	if (returnModus==0) //Datum zurÃ¼ckgeben
 		{returnValue = d.getDate()+'.'+(d.getMonth()+1)+'.'+d.getFullYear();}
 	else{
 		returnValue = getEventtext( d.getFullYear(), d.getMonth(), d.getDate());
@@ -58,7 +58,7 @@ function putDate(n)
 	document.forms['myform'].elements['datum'].value = returnValue;
 }
 /**
-* setzt das übergebene Datum in die Speicherzelle
+* setzt das Ã¼bergebene Datum in die Speicherzelle
 * @param d: datum zum schreiben in die Speicherzelle
 */
 function setDateToMemory(d)
@@ -66,7 +66,7 @@ function setDateToMemory(d)
 	document.all.date_memory.innerHTML = d.getFullYear()+','+(d.getMonth()+1)+','+d.getDate();
 }
 /**
-* Gibt das Datum aus der Speicherzelle zurück
+* Gibt das Datum aus der Speicherzelle zurÃ¼ck
 * @return: datum in Date format
 */
 function getDateFromMemory()
@@ -94,7 +94,7 @@ function nextMonth()
 	loadcalendar();
 }
 /**
-* schaltet einen Monat zurück
+* schaltet einen Monat zurÃ¼ck
 */
 function prevMonth()
 {
@@ -130,13 +130,13 @@ function iniCalendar()
 	loadcalendar();
 }
 /**
-*	Läd die Tabelle mit dem übergebenen Datum (Monat)
+*	LÃ¤d die Tabelle mit dem Ã¼bergebenen Datum (Monat)
 */
 function loadcalendar() 
 {
 	//aktuelles Datum holen (1. des Monats)
 	var d = getDateFromMemory();
-	//Monat ermitteln aus this_date (zählen beginnt bei 0, daher +1)
+	//Monat ermitteln aus this_date (zÃ¤hlen beginnt bei 0, daher +1)
 	var m = d.getMonth(); 
 	//Jahr ermitteln aus this_date (YYYY)
 	var y = d.getFullYear();
@@ -145,22 +145,22 @@ function loadcalendar()
 	//ersten Tag des Monats festlegen
 	var firstD = d;
 	firstD.setDate(1);
-	//Wochentag ermitteln vom 1. des übergebenen Monats (Wochentag aus firstD)
+	//Wochentag ermitteln vom 1. des Ã¼bergebenen Monats (Wochentag aus firstD)
 	var dateDay = firstD.getDay(); //So = 0, Mo = 1 ... Sa = 6
 	//Sonntag soll den Wert 7 darstellen -> Mo = 1 ... So = 7
 	dateDay = (dateDay == 0) ? 7: dateDay;
-	//Speicher für aktuelle Zelle
+	//Speicher fÃ¼r aktuelle Zelle
 	var entry = '';
-	//Speicher für aktuellen Tag
+	//Speicher fÃ¼r aktuellen Tag
 	var zahl = '';
 	//heutiges Datum ermitteln
 	var hD = new Date();
 	//ist event 
 	//falls event, dann darf der Rahmen
-	//nicht vom isHolyday überschrieben werden
+	//nicht vom isHolyday Ã¼berschrieben werden
 	var bEvent = false;
 	
-	//Alle Kalender Spalten durchzählen
+	//Alle Kalender Spalten durchzÃ¤hlen
 	for (var i = 1; i <= 42; i++)
 	{
 		bEvent = false;
@@ -171,13 +171,12 @@ function loadcalendar()
 		//datum zusammenschreiben
 		var dx = new Date(y,m,zahl);
 
-		//Eintragen der Daten ab ersten Tag im Monat und wenn es ein gültiges Datum ist
+		//Eintragen der Daten ab ersten Tag im Monat und wenn es ein gÃ¼ltiges Datum ist
 		if (i >= dateDay && isValidDate(y,m,zahl))		
 		{
 			entry.innerHTML = '<a class=calendar_link href=javascript:putDate('+zahl+')>'+zahl+'</a>';
 			entry.hidden = false;
 			entry.style.visibility='visible';
-			entry.style.border = 'solid 0px';
 			//wenn Event ist
 			if (!getEventtext(y,m,zahl))
 				{entry.style.color='000000';}
@@ -226,8 +225,8 @@ function loadcalendar()
 }
 
 /**
- * Prüft ob an einem bestimmten Tag ein Event stattfindet
- * und gibt dieses als Text zurück.
+ * PrÃ¼ft ob an einem bestimmten Tag ein Event stattfindet
+ * und gibt dieses als Text zurÃ¼ck.
  * @param int y: Jahr
  * @param int m: Monat
  * @param int d: tag
@@ -241,14 +240,14 @@ function getEventtext(y,m,d)
 	m = parseInt(m);
 	d = parseInt(d);
 	
-	//Monate fangen bei 0 an zuzählen
+	//Monate fangen bei 0 an zuzÃ¤hlen
 	m++;
 	//definieren der Events
 	var h = new Array(7);
 	
 	//exemplarisch nehme ich eine
 	//Liste an Festivals her
-	h[0] = "22.1.2014|Rap Mayhem Festival, München";
+	h[0] = "22.1.2014|Rap Mayhem Festival, MÃ¼nchen";
 	h[1] = "1.2.2014|Spirit Of Goa, Hamburg";
 	h[2] = "16.2.2014|Emergenza Acoustic Festival, Berlin";
 	h[3] = "2.3.2014|Skarneval Koblenz, Wehdem";
@@ -279,7 +278,7 @@ function getEventtext(y,m,d)
 */
 function isHoliday(m,d)
 {	
-	//Monate fangen bei 0 an zuzählen
+	//Monate fangen bei 0 an zuzÃ¤hlen
 	m++;
 	//festlegen der Feiertage
 	var h = new Array(7);
@@ -306,24 +305,24 @@ function isHoliday(m,d)
 }
 
 /**
- * regelt welche Rückgabe erfolgt.
- * 0 = geklicktes Datum wird zurückgegeben.
+ * regelt welche RÃ¼ckgabe erfolgt.
+ * 0 = geklicktes Datum wird zurÃ¼ckgegeben.
  * 1 = Veranstaltungstext aus getEventtext() 
- * 		wird zurückgegeben.
+ * 		wird zurÃ¼ckgegeben.
  */
 var returnModus = 0;
 
 /**
- * Setzt die Art der Rückgabe bei, Datums-klick
+ * Setzt die Art der RÃ¼ckgabe bei, Datums-klick
  * @param returnIndex:
- * 		0 = geklicktes Datum zurückgeben
+ * 		0 = geklicktes Datum zurÃ¼ckgeben
  * 		1 = event aus getEventtext()
  */
 function setReturnModus(returnIndex)
 	{returnModus = returnIndex;}
 
 /**
-* Gibt den Monatsnamen anhand der Monatsnummer zurück
+* Gibt den Monatsnamen anhand der Monatsnummer zurÃ¼ck
 *@param monthnumber: Monatsnummer (1-12)
 */
 function getMonthname(monthnumber)
@@ -337,7 +336,7 @@ function getMonthname(monthnumber)
 		  return 'Februar';
 		  break;
 		case 3:
-		  return 'März';
+		  return 'MÃ¤rz';
 		  break;
 		case 4:
 		  return 'April';
