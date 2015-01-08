@@ -113,25 +113,26 @@ footer a:link{
 }
 
 
-/* --------------------------- Styling vom Kalender ------------------------ */
+/* --------------------Styling vom Haupt (Monats) Kalender -------------------- */
 
 
-table, th, td {;
+#monatskalender, th, td {;
     border-collapse: collapse;
+    padding: 0;
 }
 
 #date-memory-row{
     display: none;
 }
 
-table{
+#monatskalender{
     border-collapse: separate;
     text-align: center;
     color: black;
     margin: auto;
 }
 
-table a:link, table a:visited {
+#monatskalender a:link, table a:visited {
     color: black;
 }
 
@@ -141,15 +142,9 @@ td{
     border-style: none;  
 }
 
-
-.calendar_link {
-    display: inline-block;
-    height: 20px;
-    width: 40px;
-    padding: 15px 20px;    
-}
-
-.calendar_head, .calendar_day, .calendar_entry {
+.calendar_head, .calendar_day, .calendar_entry, .calendar_link {
+    line-height: 50px;
+    display: table-cell;
     height: 50px;
     width: 80px;
 }
@@ -166,6 +161,62 @@ td{
 #myform{
     padding: 50px 200px;
 }
+
+/* --------------------------- Styling vom Jahres-Kalender ------------------------ 
+
+#jahreskalender, th, td {;
+    border-collapse: collapse;
+    padding: 0;
+}
+
+#jahreskalender{
+    border-collapse: separate;
+    text-align: center;
+    color: black;
+    margin: auto;
+}
+
+table a:link, table a:visited {
+    color: black;
+}
+
+td{
+    background-color: #fff;
+    display:table-cell;
+    border-style: none;  
+}
+
+.calendar_head, .calendar_day, .calendar_entry, .calendar_link, .calendar_day{
+    height: 10px;
+    width: 25px;
+}
+
+.calendar_head_month {
+    height: 20px;
+}
+
+ {
+}
+
+.calendar_entry {
+}
+
+#myform{
+    padding: 50px 200px;
+}
+
+
+
+*/
+
+
+
+
+
+
+
+
+
 
 /* -------------------------- Styling der Team-Seite -------------------------- */
 
