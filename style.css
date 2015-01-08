@@ -143,6 +143,7 @@ td{
 }
 
 .calendar_head, .calendar_day, .calendar_entry, .calendar_link {
+    line-height: 50px;
     display: table-cell;
     height: 50px;
     width: 80px;
