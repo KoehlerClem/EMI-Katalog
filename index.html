@@ -4,13 +4,13 @@
     
     <head>
         <title>Dresden Eventkalender</title>
-        <script src="js/calendar.js"></script>
+        <script type="text/javascript" src="calendar.js"></script>
         <meta charset="utf-8" />  
-        <link rel="stylesheet" href="style.css" type="text/css" />
+        <link rel="stylesheet" href="style.css" type="text/css"  />
     </head>
     
     
-    <body>
+    <body id="content">
         
         
         <header>
@@ -21,7 +21,7 @@
                     <li><a href="#">Terminansicht</a></li>
                     <li><a href="#">Monatsansicht</a> </li>
                     <li><a href="#">Jahresansicht</a> </li>
-                    <li>Suche: <input type="text" name="begriff"></li>
+                    <li>Suche: <input type="text" name="begriff"    id="suchfeld" onkeypress="checkEvent(event)" ></li>
                 </ul>
             </nav>
         </header>
@@ -29,19 +29,19 @@
         
         <div id="categorys">
             <ul>
-                <li><input type="checkbox" checked="checked" id="cSport">Sport</li>
-                <li><input type="checkbox" checked="checked" id="cSport">Musik</li>
-                <li><input type="checkbox" checked="checked" id="cSport">Party</li>
-                <li><input type="checkbox" checked="checked" id="cSport">Kultur</li>
-                <li><input type="checkbox" checked="checked" id="cSport">Outdoor</li>
-                <li><input type="checkbox" checked="checked" id="cSport">Feiertage</li>
+                <li><input type="checkbox" id="cSport">Sport</li>
+                <li><input type="checkbox" id="cMusik">Musik</li>
+                <li><input type="checkbox" id="cParty">Party</li>
+                <li><input type="checkbox" id="cKultur">Kultur</li>
+                <li><input type="checkbox" id="cOutdoor">Outdoor</li>
+                <li><input type="checkbox" id="cFeiertage">Feiertage</li>
                 
             </ul>
         </div>
         
         <!-- Hier wird der Kalender erstelt -->
         
-        <table id="monatskalender">
+        <table>
             <tr id="date-memory-row">
                 <td colspan=7 id='date_memory'>---</td>
             </tr>
@@ -147,6 +147,8 @@
                 </p>        
         </footer>
 
-
+<script type="text/javascript" src="EmiProject.js">
+    </script>
+        
     </body>
 </html>
