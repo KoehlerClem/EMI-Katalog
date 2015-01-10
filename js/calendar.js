@@ -179,16 +179,16 @@ function loadcalendar()
 			entry.style.visibility='visible';
 			//wenn Event ist
 			if (!getEventtext(y,m,zahl))
-				{entry.style.color='000000';}
+				{entry.style.color='#000000';}
 			else{
-				entry.style.color='00FF00';
+				entry.style.color='#00FF00';
 				//Eventtext wird als Tooltip angezeigt
 				entry.title = getEventtext(y,m,zahl);
 				bEvent = true;
 			}
 			//Wenn Tag ein Feiertag ist
 			if (isHoliday(m,zahl))
-				{entry.style.color='FF0000';}
+				{entry.style.color='#FF0000';}
 			else{
 				if (!bEvent)
 					entry.style.color='000000';
@@ -200,7 +200,7 @@ function loadcalendar()
 				hD.getYear() == dx.getYear())
 			{
 				entry.style.fontWeight = 'bold';
-				entry.style.backgroundColor = 'FFFF33';
+				entry.style.backgroundColor = '#FFFF33';
 			}
 			
 				

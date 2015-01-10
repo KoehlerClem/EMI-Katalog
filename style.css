@@ -12,6 +12,9 @@ a {
     text-decoration: none;
 }
 
+.clear{
+    clear:both;
+}
 
 /* -------------------------- Styling der Farben/Ränder -------------------------- */
 
@@ -40,6 +43,15 @@ header {
 header img {
 }
 
+/* -------------------------- Styling von der Überschrift -------------------------- */
+
+header img{
+    float: left;
+}
+
+#überschrift{
+    font-size: 50px;
+}
 
 /* -------------------------- Styling von der Navigation -------------------------- */
 
@@ -101,6 +113,7 @@ footer {
 }
 
 footer p {
+    margin: 0;
     color: #FFF;
 }
 
@@ -115,6 +128,10 @@ footer a:link{
 
 /* --------------------Styling vom Haupt (Monats) Kalender -------------------- */
 
+
+.calendar_entry{
+    onmouseover=mouseOver()
+}
 
 #monatskalender, th, td {;
     border-collapse: collapse;
@@ -164,50 +181,36 @@ td{
 
 /* --------------------------- Styling vom Jahres-Kalender ------------------------ */
 
-.jahreskalender{
-    border: 1px solid black;
-    margin: 8px;
-    display: inline-block;
-    border-collapse: collapse;
-}
 
 #jahreskalender{
-    border-collapse: separate;
     text-align: center;
     color: black;
     margin: auto;
 }
 
+.jahreskalender{
+    border: 1px  black;
+    margin: 8px;
+    display: inline-block;
+    border-collapse: collapse;
+}
+
 .yearcalendar_head, .yearcalendar_day, .yearcalendar_entry, .yearcalendar_link, .yearcalendar_day{
     border: 1px solid black;
-    height: 10px;
-    width: 25px;
+    height: 23px;
+    width: 24px;
 }
 
 .calendar_head_month {
     height: 20px;
 }
 
- {
-}
-
-.calendar_entry {
+.yearcalendar_entry {
 }
 
 #myform{
-    padding: 50px 200px;
+    padding: 20px 200px;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
