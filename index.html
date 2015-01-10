@@ -4,9 +4,9 @@
     
     <head>
         <title>Dresden Eventkalender</title>
-        <script type="text/javascript" src="calendar.js"></script>
+        <script src="js/calendar.js"> </script>
         <meta charset="utf-8" />  
-        <link rel="stylesheet" href="style.css" type="text/css"  />
+        <link rel="stylesheet" href="style.css" type="text/css" />
     </head>
     
     
@@ -17,10 +17,10 @@
             <img src="img/logo.jpg" alt="Dresden Events">
             <nav>
                 <ul>
-                    <li class="active"><a href="index.html">Start</a></li>
-                    <li><a href="#">Terminansicht</a></li>
-                    <li><a href="#">Monatsansicht</a> </li>
-                    <li><a href="#">Jahresansicht</a> </li>
+                    <li><a href="index.html">Start</a></li>
+                    <li><a href="terminansicht.html">Terminansicht</a></li>
+                    <li><a href="index.html">Monatsansicht</a> </li>
+                    <li><a href="jahresansicht.html">Jahresansicht</a> </li>
                     <li>Suche: <input type="text" name="begriff"    id="suchfeld" onkeypress="checkEvent(event)" ></li>
                 </ul>
             </nav>
@@ -29,19 +29,19 @@
         
         <div id="categorys">
             <ul>
-                <li><input type="checkbox" id="cSport">Sport</li>
-                <li><input type="checkbox" id="cMusik">Musik</li>
-                <li><input type="checkbox" id="cParty">Party</li>
-                <li><input type="checkbox" id="cKultur">Kultur</li>
-                <li><input type="checkbox" id="cOutdoor">Outdoor</li>
-                <li><input type="checkbox" id="cFeiertage">Feiertage</li>
+                <li><input type="checkbox"  id="cSport" onclick= refresh()>Sport</li>
+                <li><input type="checkbox" id="cMusik" onclick= refresh()>Musik</li>
+                <li><input type="checkbox" id="cParty" onclick= refresh()>Party</li>
+                <li><input type="checkbox" id="cKultur" onclick= refresh()>Kultur</li>
+                <li><input type="checkbox" id="cOutdoor" onclick= refresh()>Outdoor</li>
+                <li><input type="checkbox" id="cFeiertage" onclick= refresh()>Feiertage</li>
                 
             </ul>
         </div>
         
         <!-- Hier wird der Kalender erstelt -->
         
-        <table>
+        <table id="monatskalender">
             <tr id="date-memory-row">
                 <td colspan=7 id='date_memory'>---</td>
             </tr>
@@ -121,7 +121,7 @@
 	   </table>
    
     
-        <script type='text/javascript'>
+        <script>
 		iniCalendar();
 		
 		/*0 = wie bisher, Datum wird in die Box geschrieben*/

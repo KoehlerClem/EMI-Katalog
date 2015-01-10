@@ -162,11 +162,13 @@ td{
     padding: 50px 200px;
 }
 
-/* --------------------------- Styling vom Jahres-Kalender ------------------------ 
+/* --------------------------- Styling vom Jahres-Kalender ------------------------ */
 
-#jahreskalender, th, td {;
+.jahreskalender{
+    border: 1px solid black;
+    margin: 8px;
+    display: inline-block;
     border-collapse: collapse;
-    padding: 0;
 }
 
 #jahreskalender{
@@ -176,17 +178,8 @@ td{
     margin: auto;
 }
 
-table a:link, table a:visited {
-    color: black;
-}
-
-td{
-    background-color: #fff;
-    display:table-cell;
-    border-style: none;  
-}
-
-.calendar_head, .calendar_day, .calendar_entry, .calendar_link, .calendar_day{
+.yearcalendar_head, .yearcalendar_day, .yearcalendar_entry, .yearcalendar_link, .yearcalendar_day{
+    border: 1px solid black;
     height: 10px;
     width: 25px;
 }
@@ -207,7 +200,7 @@ td{
 
 
 
-*/
+
 
 
 
