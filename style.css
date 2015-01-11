@@ -31,6 +31,10 @@ nav, footer, #categorys ul li, nav ul li ul {
     border-radius: 5px;
 }
 
+#eventanzeige{
+    border-radius: 5px;
+}
+
 /* Styling vom Header */
 
 header {
@@ -241,9 +245,8 @@ article {
     border-radius: 5px;
     background-color: white;
     margin: 20px auto;
-    width: 600px;
+    width: 100%;
     height: 600px;
-    padding: 20px;
 }
 
 /* -------------------------- Styling der Syleguide-Seite -------------------------- */
