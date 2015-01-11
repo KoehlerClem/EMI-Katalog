@@ -26,21 +26,17 @@ a:hover, a:active {
     background-color: #D65C33;
 }
 
-nav, footer, #categorys ul li, nav ul li ul {   
+#categorys ul li, nav ul li ul {   
     background-color: #19356C;
-    border-radius: 5px;
+    border-radius : 5px;
 }
 
-#eventanzeige{
-    border-radius: 5px;
-}
 
 /* Styling vom Header */
 
 header {
     width: 100%;
     color: white;
-    text-align: center;
 }
 
 /* -------------------------- Styling von der Überschrift -------------------------- */
@@ -56,7 +52,11 @@ header img{
 /* -------------------------- Styling von der Navigation -------------------------- */
 
 nav {
+    background-color: #19356C;
     height: 40px;
+    border-top-left-radius : 5px;
+    border-top-right-radius: 5px;
+    
 }
 
 header nav ul {
@@ -102,38 +102,23 @@ nav ul li ul li a:hover{
 
 /* Styling vom Suchfeld */
 
-header nav ul input {
+nav #suche{
+    padding-top: 10px;
+    padding-right: 10px;
+    display: inline;
+    float: right;
 }
 
-
-/* --------------------------Styling von den Kategorien --------------------------- 
-
-#categorys ul {
-    margin: 10px auto;
-    color: white;
-    width: 700px;
-    list-style: none;
-}
-
-#categorys ul li {
-    margin: 0;
-    text-align: center;
-    padding: 10px 0px;
-    display: inline-block;
-    width: 110px;
-}
-
-#categorys ul li input {
-}
 
 /* -------------------------- Styling vom Footer -------------------------- */
 
 
 footer {
-    text-align: center;
+    background-color: #19356C;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     width: 100%;
     height: 40px;
-    border-radius: 5px;
 }
 
 footer p {
@@ -146,6 +131,7 @@ footer a:link{
     height: 20px;
     padding: 10px 20px;
     border-radius: 5px;
+    margin-left: 20px;
     
 }
 
@@ -153,13 +139,11 @@ footer a:link{
 /* --------------------Styling vom Haupt (Monats) Kalender -------------------- */
 
 
-.calendar_entry{
-    onmouseover=mouseOver()
-}
-
 #monatskalender, th, td {;
     border-collapse: collapse;
-    padding: 0;
+    padding-left: 0;
+    padding-right: 0;
+    
 }
 
 #date-memory-row{
@@ -184,10 +168,10 @@ td{
 }
 
 .calendar_head, .calendar_day, .calendar_entry, .calendar_link {
-    line-height: 50px;
+    line-height: 70px;
     display: table-cell;
-    height: 50px;
-    width: 80px;
+    height: 75px;
+    width: 120px;
 }
 
 .calendar_head_month {
@@ -203,7 +187,7 @@ td{
     padding: 50px 200px;
 }
 
-/* --------------------------- Styling vom Jahres-Kalender ------------------------ */
+/* --------------------------- Styling vom Jahres-Kalender ------------------------ 
 
 
 #jahreskalender{
@@ -235,18 +219,25 @@ td{
 #myform{
     padding: 20px 200px;
 }
-
-
+*/
 
 /* -------------------------- Styling der Team-Seite -------------------------- */
 
 article {
     font-family: "Times New Roman", Times, serif;
-    border-radius: 5px;
     background-color: white;
-    margin: 20px auto;
     width: 100%;
-    height: 600px;
+    height: 634px;
+}
+
+.articleheader{
+    padding: 20px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.article{
+    padding: 20px;
 }
 
 /* -------------------------- Styling der Syleguide-Seite -------------------------- */
@@ -265,12 +256,14 @@ article {
 }
 
 
-/* -------------------------- Styling der Event-Seite -------------------------- */
+/* -------------------------- Styling der Event-Seite -------------------------- 
 
 #eventanzeige{
     background-color: white;
     padding: 200px 70px;
 }
+
+*/
 
 
 

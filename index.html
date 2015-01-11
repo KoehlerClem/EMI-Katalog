@@ -19,10 +19,8 @@
             <div class="clear"></div>
             <nav>
                 <ul>
-                    <li><a href="index.html">Kalender</a></li>
-                    <li><a href="terminansicht.html">Events</a></li>     
-                    <li><a href="jahresansicht.html">Jahresansicht</a> </li>
-                    <li><a href="#">Kategorien</a> 
+                    <li><a href="index.html">Kalender</a></li>            
+                    <li><a href="">Kategorien</a>
                         <ul>
                             <li><input checked type="checkbox"  id="cSport" onclick= "refresh()">Sport</li>
                             <li><input checked type="checkbox" id="cMusik" onclick= "refresh()">Musik</li>
@@ -32,16 +30,13 @@
                             <li><input checked type="checkbox" id="cFeiertage" onclick= "refresh()">Feiertage</li>
                         </ul>
                     </li>
-                    <li>Suche: <input type="text" name="begriff"    id="suchfeld" onkeypress="checkEvent(event)" ></li>
+                    <div id="suche">
+                        <li>Suche: <input type="text" name="begriff"    id="suchfeld" onkeypress="checkEvent(event)" ></li>
+                    </div>
                 </ul>
             </nav>
         </header>
-        
-        
-        <div id="categorys">
-            
-        </div>
-        
+      
         <!-- Hier wird der Kalender erstelt -->
         
         <table id="monatskalender">
@@ -134,18 +129,11 @@
 		getEventtext definiert werden.*/
 		//setReturnModus(1);
         </script>
-
-        
-        <form id='myform'>
-            <input id='datum' size=60/>
-        </form>
-
-        
+      
         <footer>
                 <p>
                     <a href="team.html">Team</a>
                     <a href="styleguide.html">Styleguide</a>
-                    <a href="#">Bla</a>
                     &copy;2014
                 </p>        
         </footer>
