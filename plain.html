@@ -10,13 +10,24 @@
     
     <body>
         <header>
-            <img src="img/logo.jpg">
+            <img src="img/logo.jpg" alt="Dresden Events">
+            <div id="überschrift">Dresden Eventkalender</div>
+            <div class="clear"></div>
             <nav>
                 <ul>
-                    <li><a href="index.html">Start</a></li>
-                    <li><a href="terminansicht.html">Terminansicht</a></li>
-                    <li><a href="index.html">Monatsansicht</a> </li>
+                    <li><a href="index.html">Kalender</a></li>
+                    <li><a href="terminansicht.html">Events</a></li>     
                     <li><a href="jahresansicht.html">Jahresansicht</a> </li>
+                    <li><a href="#">Kategorien</a> 
+                        <ul>
+                            <li><input checked type="checkbox"  id="cSport" onclick= "refresh()">Sport</li>
+                            <li><input checked type="checkbox" id="cMusik" onclick= "refresh()">Musik</li>
+                            <li><input checked type="checkbox" id="cParty" onclick= "refresh()">Party</li>
+                            <li><input checked type="checkbox" id="cKultur" onclick= "refresh()">Kultur</li>
+                            <li><input checked type="checkbox" id="cOutdoor" onclick= "refresh()">Outdoor</li>
+                            <li><input checked type="checkbox" id="cFeiertage" onclick= "refresh()">Feiertage</li>
+                        </ul>
+                    </li>
                     <li>Suche: <input type="text" name="begriff"    id="suchfeld" onkeypress="checkEvent(event)" ></li>
                 </ul>
             </nav>

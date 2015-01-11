@@ -26,7 +26,7 @@ a:hover, a:active {
     background-color: #D65C33;
 }
 
-nav, footer, #categorys ul li {   
+nav, footer, #categorys ul li, nav ul li ul {   
     background-color: #19356C;
     border-radius: 5px;
 }
@@ -36,11 +36,7 @@ nav, footer, #categorys ul li {
 header {
     width: 100%;
     color: white;
-    
     text-align: center;
-}
-
-header img {
 }
 
 /* -------------------------- Styling von der Überschrift -------------------------- */
@@ -61,11 +57,11 @@ nav {
 
 header nav ul {
     list-style: none;
-    margin: 0;    
+    margin: 0;  
 }
 
 header nav ul li {
-    display: inline; 
+    display: inline-block; 
 }
 
 header nav ul a:link, header nav a:visited {
@@ -76,13 +72,37 @@ header nav ul a:link, header nav a:visited {
 }
 
 
+nav ul li:hover > ul {
+    visibility: visible;
+}
+
+nav ul li ul{
+    width: 116px;
+    padding: 0;
+    text-align: left;
+    list-style: none;
+    visibility: hidden;
+    position:absolute;
+    background-color: #19356C;
+}
+
+nav ul li ul li{
+    display: block;
+    width: 100px;
+    padding: 10px;
+}
+
+nav ul li ul li a:hover{
+    color: #333;
+}
+
 /* Styling vom Suchfeld */
 
 header nav ul input {
 }
 
 
-/* --------------------------Styling von den Kategorien --------------------------- */
+/* --------------------------Styling von den Kategorien --------------------------- 
 
 #categorys ul {
     margin: 10px auto;
@@ -234,11 +254,20 @@ article {
     background-color: #19356C;
 }
 
+/* -------------------------- Styling der Terminansicht-Seite -------------------------- */
+
+#terminansicht{
+    background-color: white;
+    padding: 200px 70px;
+}
 
 
+/* -------------------------- Styling der Event-Seite -------------------------- */
 
-
-
+#eventanzeige{
+    background-color: white;
+    padding: 200px 70px;
+}
 
 
 
