@@ -92,6 +92,7 @@ function nextMonth()
 	d = new Date(y,m,01);
 	setDateToMemory(d);
 	loadcalendar();
+    eventCheck()
 }
 /**
 * schaltet einen Monat zurück
@@ -116,6 +117,7 @@ function prevMonth()
 	setDateToMemory(d);
 	
 	loadcalendar();
+    eventCheck()
 }
 /**
 * zum erstmaligen aufrufen des Kalenders
