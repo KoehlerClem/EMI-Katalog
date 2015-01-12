@@ -3,19 +3,18 @@
 
 /* -------------------------- Styling der Main-Seite -------------------------- */
 html {
-background-image: url(img/skulls.png);
+    background-image: url(img/skulls.png);
 
 
 }
 body {
     font: 16px arial, sans-serif;
-    
-    background-image: url(img/texturetastic_gray.png);
+    background-color: white;
     margin: auto;
     width: 800px;
     -webkit-box-shadow: 1px 1px 65px 14px rgba(0,0,0,0.75);
--moz-box-shadow: 1px 1px 65px 14px rgba(0,0,0,0.75);
-box-shadow: 1px 1px 65px 14px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 65px 14px rgba(0,0,0,0.75);
+    box-shadow: 1px 1px 65px 14px rgba(0,0,0,0.75);
 }
 
  /* Styling von Links */
@@ -153,7 +152,7 @@ footer a:link{
 /* --------------------Styling vom Haupt (Monats) Kalender -------------------- */
 
 #Kalender {
-    
+    background-image: url(img/texturetastic_gray.png)
 
 }
 
