@@ -187,45 +187,125 @@ function createEvents(){
      //Musterevent: 
         var newEvent = new Array("datum","kategorie","musterEvent_Text","true","newEvent");
             newEvent[0] = new Array("15","august","2015");
-            events[0] = newEvent;
+           // events[0] = newEvent;
     
     //Beispiele:
-        var pokalSpiel = new Array("datum","sport","Pokalspiel_zwischen_Dresden_und_Dortmund","false","Pokalspiel");
+        //Sport:
+        var pokalSpiel = new Array("datum","sport","__Dynamo_Dresden_gegen_Borussia_Dortmund","false","Pokalspiel");
                         if(sport==true){
                             pokalSpiel[3]="true";
                         }
-            pokalSpiel[0] = new Array("7","mai","2015");
-            events[1] = pokalSpiel;
+            pokalSpiel[0] = new Array("6","märz","2015");
+            events.push(pokalSpiel);
     
-        var frühlingslauf = new Array("datum","sport","Ein_10km_Fruehlingslauf_an_der_Elbe_entlang","false","Fruehlingslauf");
+        var pokalSpiel2 = new Array("datum","sport","__Schlittschuhlaufen_in_der_Energieverbund_Arena","false","Eis-Disco");
+                        if(sport==true){
+                            pokalSpiel2[3]="true";
+                        }
+            pokalSpiel2[0] = new Array("24","januar","2015");
+            events.push(pokalSpiel2);
+    
+    
+        var frühlingslauf = new Array("datum","sport","__Ein_10km_Fruehlingslauf_an_der_Elbe_entlang","false","Fruehlingslauf");
                 if(sport==true){
                             frühlingslauf[3]="true";
                         }
             frühlingslauf[0] = new Array("3","april","2015");
-            events[2] = frühlingslauf;
+            events.push(frühlingslauf);
     
-        var saufUndLauf = new Array("datum","sport","erst_Laufen_dann_Saufen","false","Sauf_und_Lauf");
+        var saufUndLauf = new Array("datum","sport","__erst_Laufen_dann_Saufen_am_Elbufer","false","Sauf_und_Lauf");
             if(sport==true){
                             saufUndLauf[3]="true";
                         }
-            saufUndLauf[0] = new Array("23","juni","2015");
-            events[3] = saufUndLauf;
+            saufUndLauf[0] = new Array("5","august","2015");
+            events.push(saufUndLauf);
     
-        var electroParty = new Array("datum","party","electroParty_im_Stereo","false","Electro_Party");
-    if(party==true){
+    
+        //party:
+        var electroParty = new Array("datum","party","__fette_electroParty_im_Stereo","false","stereo_party");
+            if(party==true){
                             electroParty[3]="true";
                         }
-            electroParty[0] = new Array("23","juni","2015");
-            events[4] = electroParty;
+            electroParty[0] = new Array("15","januar","2015");
+            events.push(electroParty);
     
-        var festival = new Array("datum","party","Das_weitbekannte_Brückenfestival","false","Festival");
+
+        
+        var festival2 = new Array("datum","party","__Zu_Ehren_des_meistgeliebten_Getränks_der_Welt_wird_gefeiert","false","Tag_des_Bieres");
             if(party==true){
+                            festival2[3]="true";
+                        }
+            festival2[0] = new Array("29","august","2015");
+            events.push(festival2);
+    
+    
+        //musik
+        var konzert = new Array("datum","musik","__endlich_wieder_da...","false","Konzert:_The_strokes");
+            if(musik==true){
+                            konzert[3]="true";
+                        }
+            konzert[0] = new Array("9","februar","2015");
+            events.push(konzert);
+    
+        var festival = new Array("datum","musik","__Das_weitbekannte_Brueckenfestival","false","Festival");
+            if(musik==true){
                             festival[3]="true";
                         }
             festival[0] = new Array("9","august","2015");
-            events[5] = festival;
+            events.push(festival);
+    
+    
+        //kultur
+        var kultur1 = new Array("datum","kultur","__Friedrich_Dürrenmatts_-_Die_Panne_-_als_opulenter_Untergangskreisel_im_Kleinen_Haus.","false","Theater:_mein_deutsches_deutsches_Land");
+            if(kultur==true){
+                            kultur1[3]="true";
+                        }
+            kultur1[0] = new Array("19","august","2015");
+            events.push(kultur1);
         
-
+        //outdoor
+        var outdoor1 = new Array("datum","outdoor","__goenne_dir_mal_eine_Pause,_mach_Urlaub_in_der_schoenen_saechsischen_Schweiz","false","Wandern_im_Riesengebirge");
+            if(outdoor==true){
+                            outdoor1[3]="true";
+                        }
+            outdoor1[0] = new Array("4","august","2015");
+            events.push(outdoor1);
+    
+        var outdoor2 = new Array("datum","outdoor","__jeder_der_Lust_kommt_an_die_Elbufer_und_es_wird_gemeinschaftlich_gegrillt_und_das_schoene_Wetter_genossen,_Bier_und_Essen_selber_mitbringen!","false","Gemeinschaftsgrillen");
+            if(outdoor==true){
+                            outdoor2[3]="true";
+                        }
+            outdoor2[0] = new Array("31","august","2015");
+            events.push(outdoor2);
+    
+        //Feiertage:
+        var feiertage1 = new Array("datum","feiertage","_","false","Neujahr");
+            if(feiertage==true){
+                            feiertage1[3]="true";
+                        }
+            feiertage1[0] = new Array("1","januar","2015");
+            events.push(feiertage1);
+    
+        var feiertage2 = new Array("datum","feiertage","_","false","Tag_der_Arbeit");
+            if(feiertage==true){
+                            feiertage2[3]="true";
+                        }
+            feiertage2[0] = new Array("1","mai","2015");
+            events.push(feiertage2);
+    
+        var feiertage3 = new Array("datum","feiertage","_","false","Maria_Himmelfahrt");
+            if(feiertage==true){
+                            feiertage3[3]="true";
+                        }
+            feiertage3[0] = new Array("15","august","2015");
+            events.push(feiertage3);
+    
+        var feiertage4 = new Array("datum","feiertage","_","false","Tag_der_deutschen_Einheit");
+            if(feiertage==true){
+                            feiertage4[3]="true";
+                        }
+            feiertage4[0] = new Array("3","oktober","2015");
+            events.push(feiertage4);
           return events;
 
 }
