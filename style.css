@@ -1,8 +1,20 @@
+
+
+
 /* -------------------------- Styling der Main-Seite -------------------------- */
+html {
+background-image: url(img/skulls.png);
+background-color: #d8d8d8;
+
+}
 body {
     font: 16px arial, sans-serif;
+    background-color: #d8d8d8;
     margin: auto;
-    width: 860px;
+    width: 800px;
+    -webkit-box-shadow: 1px 1px 65px 14px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 1px 65px 14px rgba(0,0,0,0.75);
+box-shadow: 1px 1px 65px 14px rgba(0,0,0,0.75);
 }
 
  /* Styling von Links */
@@ -51,8 +63,9 @@ header img{
 
 /* -------------------------- Styling von der Navigation -------------------------- */
 
+
 nav {
-    background-color: #19356C;
+    background-color: #196C2F;
     height: 40px;
     border-top-left-radius : 5px;
     border-top-right-radius: 5px;
@@ -114,7 +127,7 @@ nav #suche{
 
 
 footer {
-    background-color: #19356C;
+    background-color: #196C2F;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     width: 100%;
@@ -138,6 +151,10 @@ footer a:link{
 
 /* --------------------Styling vom Haupt (Monats) Kalender -------------------- */
 
+#Kalender {
+    
+
+}
 
 #monatskalender, th, td {;
     border-collapse: collapse;
@@ -155,6 +172,7 @@ footer a:link{
     text-align: center;
     color: black;
     margin: auto;
+    
 }
 
 #monatskalender a:link, table a:visited {
