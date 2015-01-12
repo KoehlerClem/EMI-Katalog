@@ -244,6 +244,7 @@ article {
 
 #shblue {
     display: inline-block;
+    display: visible;
     width: 40px;
     background-color: #19356C;
 }
