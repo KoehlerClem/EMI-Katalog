@@ -38,7 +38,7 @@ a:hover, a:active {
 }
 
 #categorys ul li, nav ul li ul {   
-    background-color: #19356C;
+    background-color: #196C2F;
     border-radius : 5px;
 }
 
@@ -100,7 +100,7 @@ nav ul li ul{
     list-style: none;
     visibility: hidden;
     position:absolute;
-    background-color: #19356C;
+    background-color: #196C2F;
 }
 
 nav ul li ul li{
@@ -265,11 +265,28 @@ article a:visited {
 
 /* -------------------------- Styling der Syleguide-Seite -------------------------- */
 
-#shblue {
+#greenbg {
     display: inline-block;
-    display: visible;
-    width: 40px;
-    background-color: #19356C;
+    float: right;
+    width: 100px;
+    height: 20px;
+    background-color: #196C2F;
+}
+
+#kalenderbg {
+    display: inline-block;
+    float: right;
+    width: 100px;
+    height: 20px;
+    background-image: url(img/texturetastic_gray.png);
+}
+
+#htmlbg {
+    display: inline-block;
+    float: right;
+    width: 100px;
+    height: 20px;
+    background-image: url(img/skulls.png);
 }
 
 /* -------------------------- Styling der Terminansicht-Seite -------------------------- */
