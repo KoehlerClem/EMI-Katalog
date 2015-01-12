@@ -262,6 +262,10 @@ article a:visited {
 .article{
     padding: 20px;
 }
+#Impressum {
+        padding-left: 20px;
+    padding-right: 20px;
+}
 
 /* -------------------------- Styling der Syleguide-Seite -------------------------- */
 
