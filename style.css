@@ -4,12 +4,13 @@
 /* -------------------------- Styling der Main-Seite -------------------------- */
 html {
 background-image: url(img/skulls.png);
-background-color: #d8d8d8;
+
 
 }
 body {
     font: 16px arial, sans-serif;
-    background-color: #d8d8d8;
+    
+    background-image: url(img/texturetastic_gray.png);
     margin: auto;
     width: 800px;
     -webkit-box-shadow: 1px 1px 65px 14px rgba(0,0,0,0.75);
