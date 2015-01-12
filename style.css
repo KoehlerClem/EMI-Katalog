@@ -1,9 +1,8 @@
 /* -------------------------- Styling der Main-Seite -------------------------- */
 body {
     font: 16px arial, sans-serif;
-    background-image: url(img/bg.jpg);
     margin: auto;
-    width: 800px;
+    width: 860px;
 }
 
  /* Styling von Links */
@@ -43,6 +42,7 @@ header {
 
 header img{
     float: left;
+    width: 100%;
 }
 
 #überschrift{
