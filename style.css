@@ -273,6 +273,22 @@ article a:visited {
     background-color: #196C2F;
 }
 
+#orangebg {
+    display: inline-block;
+    float: right;
+    width: 100px;
+    height: 20px;
+    background-color: #D65C33;
+}
+
+#redbg {
+    display: inline-block;
+    float: right;
+    width: 100px;
+    height: 20px;
+    background-color: red;
+}
+
 #kalenderbg {
     display: inline-block;
     float: right;
