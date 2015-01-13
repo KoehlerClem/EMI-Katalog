@@ -426,7 +426,7 @@ function eventCheck(){
                 if(document.getElementById("calendar_entry_"+j).childNodes.length==1){
                     for(z=0;z<events.length;z++){
                         if(document.getElementById("calendar_entry_"+j).childNodes[0].childNodes[0].nodeValue==events[i][0][0]){
-                            document.getElementById("calendar_entry_"+j).style.backgroundColor="cyan"; 
+                            document.getElementById("calendar_entry_"+j).style.backgroundColor="#196C2F"; 
                             
                     
                         }
