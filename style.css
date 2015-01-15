@@ -107,7 +107,6 @@ nav ul li ul{
 
 nav ul li ul li{
     display: block;
-    width: 100px;
     padding: 10px;
 }
 
@@ -293,6 +292,15 @@ article a:visited {
     width: 100px;
     height: 20px;
     background-color: red;
+}
+
+#whitebg {
+    display: inline-block;
+    float: right;
+    width: 98px;
+    height: 18px;
+    background-color: white;
+    border: 1px solid black;
 }
 
 #kalenderbg {
